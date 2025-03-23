@@ -70,7 +70,7 @@ function spawnCroissants() {
 
     const isGold = Math.random() < 0.1;
     const croissant = document.createElement('img');
-    croissant.src = isGold ? 'assets/gold-croissant.png' : 'assets/croissant.png';
+    croissant.src = isGold ? 'assets:/gold-croissant.png' : 'assets:/croissant.png';
     croissant.className = 'croissant';
     if (isGold) croissant.classList.add('gold');
 
