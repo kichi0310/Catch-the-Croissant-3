@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catch the Croissant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-container">
+    <h2>Đăng nhập để chơi</h2>
+    <input type="tel" id="phoneInput" placeholder="Nhập số điện thoại" />
+    <button id="startButton">Bắt đầu chơi</button>
+    <p id="errorMsg" class="error"></p>
+  </div>
+
+  <div id="game-container" style="display:none;">
+    <h1>Bắt Croissant!</h1>
+    <p>Điểm: <span id="score">0</span></p>
+    <p>Thời gian còn lại: <span id="time">45</span> giây</p>
+    <div id="game-area"></div>
+  </div>
+
+  <div id="result-container" style="display:none;">
+    <h2>Kết quả của bạn</h2>
+    <p>Điểm của bạn: <span id="finalScore"></span></p>
+    <div id="reward-message"></div>
+    <button onclick="restartGame()">Chơi lại</button>
+    <div id="leaderboard">
+      <h3>Bảng xếp hạng tuần</h3>
+      <ul id="topPlayers"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
